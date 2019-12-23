@@ -68,11 +68,11 @@ body {
     color: white;
 }
 
-.main-header {
+.main-header{
     background-image: url("./img/bgr.png");
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 540px;
+    height: 540px;
     position: relative;
 }
 
@@ -89,7 +89,8 @@ body {
 
 .container {
     width: 320px;
-    margin: 0 auto;
+    padding: 0 10px;
+    margin: auto;
 }
 
 .main-div {
@@ -198,9 +199,9 @@ body {
     border-radius: 20px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px){
     .main-header {
-        min-height: 700px;
+        height: 700px;
     }
     .container {
         width: 670px;
@@ -249,13 +250,10 @@ body {
     .partner-list-item{
         padding-top: 50px;
     }
-    .brad{
-        order: 1;
-    }
-    .lucas{
+    .heather{
         order: 2;
     }
-    .heather{
+    .lucas{
         order: 3;
     }
     .bradley{
@@ -269,42 +267,57 @@ body {
     }
     
 }
-@media screen (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
+    .main-header {
+        height: 700px;
+    }
     .container {
         width: 960px;
+        position: relative;
     }
+    .main-div{
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .main-logo  {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
     .main-header-title {
-        margin: 150px auto 0;
+        font-size: 52px;
+        width: 500px;
+        margin: 140px auto 0;
     }
     
     .main-header-descrp {
         margin-top: 24px;
         font-size: 30px;
+        width: 400px;
     }
     .main-header-btn {
         margin-top: 26px;
     }
     
     .partner {
-        padding-top: 70px;
+        padding-top: 30px;
         color: var(--h-color);
         font-size: 14px;
+    }
+    
+    .partner .container{
+        width: 960px;
     }
     .partner-list{
         width: 100%;
         display: flex;
-        direction: ;
         justify-content: space-between;
-    }
-    .partner .container div{
-        width: 960px;
+        flex-wrap: nowrap;
     }
     .partner-list-item{
-        width: 960px;
         padding-top: 30px;
-    }
-    .brad{
-        order: 1;
     }
     .lucas{
         order: 3;
