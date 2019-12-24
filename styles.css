@@ -151,6 +151,11 @@ body {
     background-color: var(--main-color);
     border-radius: 20px;
 }
+.top-div-btn:hover {
+    color: var(--main-color);
+    background-color: white;
+    border: 2px solid var(--main-color);
+}
 
 .partner {
     padding-top: 40px;
