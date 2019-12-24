@@ -247,18 +247,17 @@ body {
     }
     .container {
         width: 670px;
-        position: relative;
+    }
+    .main-headers{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
     }
     .main-div{
         /* padding-top: 34px; */
         display: flex;
+        flex-direction: row-reverse;
         justify-content: flex-end;
-    }
-    
-    .main-logo  {
-        position: absolute;
-        top: 0;
-        left: 0;
     }
     
     .top-div-title {
