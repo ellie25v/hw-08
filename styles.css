@@ -48,6 +48,7 @@ html {
 
 a {
     text-decoration: none;
+    display: block;
 }
 
 button {
@@ -135,7 +136,10 @@ body {
 }
 
 .main-header-btn {
+    box-sizing: border-box;
+    margin: 0 auto;
     margin-top: 12px;
+    padding: 10px;
     color: white;
     font-size: 14px;
     font-family: var(--main-font);
@@ -159,26 +163,55 @@ body {
 }
 .partner-list-item{
     padding-top: 20px;
+    position: relative;
 }
 .partner img {
     margin: 0 auto;
 }
 
 .partner-name {
+    padding-top: 16px;
     text-transform: capitalize;
 }
-
+.partner-img::before{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 190px;
+    top: 106px;
+}
+.brad .partner-img::before {
+    background-image: url(./img/brad-icon.png);
+    background-color: var(--main-color);
+}
+.lucas .partner-img::before{
+    background-color: #ffa507;
+    background-image: url(./img/lucas-icon.png);
+}
+.heather .partner-img::before {
+    background-color: #1cd7ad;
+    background-image: url(./img/heather-icon.png);
+}
+.bradley .partner-img::before {
+    background-color: #4e73db;
+    background-image: url(./img/bradley-icon.png);
+}
 .partner-descrp {
     font-family: var(--p-font);
     color: var(--p-color);
     font-weight: 300;
-    width: 224px;
+    max-width: 224px;
     margin: 0 auto;
-    margin-top: 12px;
+    margin-top: 10px;
 }
 
 .partner-btn {
-    margin-top: 12px;
+    margin-top: 26px;
     margin-bottom: 70px;
     background-color: white;
     font-size: 14px;
