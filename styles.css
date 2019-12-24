@@ -82,10 +82,10 @@ body {
     width: 320px;
     padding: 0 10px;
     margin: auto;
-    margin-top: 20px;
 }
 
 .main-div {
+    /* padding-top: 20px; */
     display: inline-block;
 }
 
@@ -207,11 +207,11 @@ body {
         min-height: 700px;
     }
     .container {
-        margin-top: 34px;
         width: 670px;
         position: relative;
     }
     .main-div{
+        /* padding-top: 34px; */
         display: flex;
         justify-content: flex-end;
     }
@@ -276,11 +276,11 @@ body {
         min-height: 700px;
     }
     .container {
-        margin-top: 34px;
         width: 940px;
         position: relative;
     }
     .main-div{
+        /* padding-top: 34px; */
         display: flex;
         justify-content: flex-end;
     }
