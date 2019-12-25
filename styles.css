@@ -4,19 +4,24 @@
     font-style: normal;
     font-weight: 400;
     src: local('Montserrat Regular'), local('Montserrat-Regular'),
-         url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* montserrat-700 - latin */
-  @font-face {
+        url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/montserrat-v14-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-700 - latin */
+@font-face {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     src: local('Montserrat Bold'), local('Montserrat-Bold'),
-         url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/montserrat-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  
+        url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/montserrat-v14-latin-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 
 /* roboto-300 - latin */
 @font-face {
@@ -77,7 +82,7 @@ body {
     color: white;
 }
 
-.top-div{
+.top-div {
     background-color: rgba(0, 0, 0, 0.8);
     background-image: url("./img/bgr.png");
     background-repeat: no-repeat;
@@ -85,7 +90,7 @@ body {
     background-position: center;
     /* position: relative; */
     min-height: 540px;
-    
+
 }
 
 .container {
@@ -99,8 +104,10 @@ body {
     /* padding-top: 20px; */
     display: inline-block;
 }
+
 .main-div .main-logo {
     display: none;
+
 }
 
 .main-div-btn {
@@ -127,14 +134,18 @@ body {
     text-transform: uppercase;
     color: white;
     font-size: 20px;
+
 }
+
 .top-div-text span {
     display: block;
 }
+
 .top-div-title {
     font-size: 30px;
     text-transform: uppercase;
     margin-top: 28px;
+    letter-spacing: -0.7px;
 }
 
 .top-div-descrp {
@@ -165,6 +176,7 @@ body {
     background-color: var(--main-color);
     border-radius: 20px;
 }
+
 .top-div-btn:hover {
     color: var(--main-color);
     background-color: white;
@@ -181,16 +193,19 @@ body {
     width: 280px;
     margin: 0 auto;
 }
-.partner-list-item{
+
+.partner-list-item {
     padding-top: 20px;
     width: 230px;
     margin: 0 auto;
 }
+
 .partner-img {
     width: 200px;
     position: relative;
     margin: 0 auto;
 }
+
 .partner img {
     margin: 0 auto;
     border-radius: 50%;
@@ -200,7 +215,8 @@ body {
     padding-top: 16px;
     text-transform: capitalize;
 }
-.partner-img::before{
+
+.partner-img::before {
     content: "";
     position: absolute;
     width: 30px;
@@ -212,22 +228,27 @@ body {
     left: 130px;
     top: 94px;
 }
+
 .brad .partner-img::before {
     background-image: url(./img/brad-icon.png);
     background-color: var(--main-color);
 }
-.lucas .partner-img::before{
+
+.lucas .partner-img::before {
     background-color: #ffa507;
     background-image: url(./img/lucas-icon.png);
 }
+
 .heather .partner-img::before {
     background-color: #1cd7ad;
     background-image: url(./img/heather-icon.png);
 }
+
 .bradley .partner-img::before {
     background-color: #4e73db;
     background-image: url(./img/bradley-icon.png);
 }
+
 .partner-descrp {
     font-family: var(--p-font);
     color: var(--p-color);
@@ -250,129 +271,151 @@ body {
     border: 2px solid var(--main-color);
     border-radius: 20px;
 }
+
 .partner-btn:hover {
     background-color: var(--main-color);
     border: none;
     color: white;
 }
-@media screen and (max-width: 767px){
+
+@media screen and (max-width: 767px) {
     .m {
         display: none;
     }
 }
 
 @media screen and (min-width: 768px) {
-   
-    .top-div{
+
+    .top-div {
         min-height: 700px;
     }
+
     .container {
         width: 670px;
     }
-    .main-headers{
+
+    .main-headers {
         display: flex;
         justify-content: space-between;
     }
-    .main-div{
+
+    .main-div {
         /* padding-top: 34px; */
         display: flex;
         justify-content: flex-end;
     }
+
     .s {
         display: none;
     }
 
-    
+
     .top-div-title {
         font-size: 52px;
         width: 500px;
         margin: 60px auto 0;
     }
-    
+
     .top-div-descrp {
         margin-top: 24px;
         font-size: 30px;
         width: 400px;
     }
+
     .top-div-btn {
         margin-top: 26px;
     }
-    
+
     .partner {
         padding-top: 26px;
         color: var(--h-color);
         font-size: 14px;
     }
-    
-    .partner .container{
+
+    .partner .container {
         width: 500px;
     }
-    .partner-list{
+
+    .partner-list {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    .partner-list-item{
+
+    .partner-list-item {
         padding-top: 26px;
     }
+
     /* .partner-img::before{
         left: 142px;
         top: 118px;
     } */
-    .heather{
+    .heather {
         order: 2;
     }
-    .lucas{
+
+    .lucas {
         order: 3;
     }
-    .bradley{
+
+    .bradley {
         order: 4;
     }
-    .partner-title{
+
+    .partner-title {
         width: 100%;
     }
+
     .partner-btn {
         margin-top: 30px;
     }
-    
+
 }
+
 @media screen and (min-width: 940px) {
     .container {
         width: 940px;
     }
-    
+
     .partner {
         padding-top: 30px;
         color: var(--h-color);
         font-size: 14px;
     }
-    
-    .partner .container{
+
+    .partner .container {
         width: 960px;
     }
-    .partner-list{
+
+    .partner-list {
         width: 100%;
         display: flex;
         justify-content: space-between;
         flex-wrap: nowrap;
     }
-    .partner-list-item{
+
+    .partner-list-item {
         padding-top: 30px;
     }
-    .lucas{
+
+    .lucas {
         order: 3;
     }
-    .heather{
+
+    .heather {
         order: 2;
     }
-    .bradley{
+
+    .bradley {
         order: 4;
     }
-    .partner-title{
+
+    .partner-title {
         width: 100%;
     }
+
     .partner-btn {
         margin-top: 30px;
     }
-    
+
 }
