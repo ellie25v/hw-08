@@ -122,7 +122,8 @@ body {
     border-radius: 20px;
 }
 
-.main-logo a {
+.main-logo a,
+.main-logo {
     text-transform: uppercase;
     color: white;
     font-size: 20px;
@@ -255,7 +256,7 @@ body {
     color: white;
 }
 @media screen and (max-width: 767px){
-    .main-div .main-logo {
+    .m {
         display: none;
     }
 }
@@ -270,16 +271,14 @@ body {
     }
     .main-headers{
         display: flex;
-        flex-direction: row-reverse;
         justify-content: space-between;
     }
     .main-div{
         /* padding-top: 34px; */
         display: flex;
-        flex-direction: row-reverse;
         justify-content: flex-end;
     }
-    .logo .main-logo {
+    .s {
         display: none;
     }
 
